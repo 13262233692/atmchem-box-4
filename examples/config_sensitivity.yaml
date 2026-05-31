@@ -1,0 +1,50 @@
+mechanism: mechanisms/mozart.yaml
+
+temperature: 298.15
+pressure: 101325.0
+
+use_sparse: true
+sparse_threshold: 100
+
+initial_conditions:
+  O3: 50.0e-9
+  NO: 10.0e-9
+  NO2: 20.0e-9
+  OH: 1.0e-12
+  HO2: 10.0e-12
+  CO: 200.0e-9
+  CH4: 1700.0e-9
+  HCHO: 5.0e-9
+  RO2: 10.0e-12
+  CH3O2: 10.0e-12
+  O2: 2.7e19
+  H2O: 1.0e17
+  M: 2.5e19
+
+emissions:
+  NO: 1.0e-11
+  CO: 2.0e-10
+  HCHO: 5.0e-12
+
+photolysis:
+  JNO2: 0.01
+  JHCHO: 0.001
+
+deposition:
+  O3: 0.001
+  HCHO: 0.002
+  HNO3: 0.005
+
+sensitivity:
+  objective_type: final
+  objective_weights:
+    O3: 1.0
+  t_start: 0.0
+  t_end: 3600.0
+  dt: 60.0
+  checkpoint_dt: 60.0
+
+simulation:
+  t_start: 0.0
+  t_end: 3600.0
+  dt: 60.0

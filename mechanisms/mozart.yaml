@@ -1,0 +1,189 @@
+name: MOZART_Simplified
+
+species:
+  - name: O3
+    formula: O3
+    constant: false
+  - name: NO
+    formula: NO
+    constant: false
+  - name: NO2
+    formula: NO2
+    constant: false
+  - name: OH
+    formula: OH
+    constant: false
+  - name: HO2
+    formula: HO2
+    constant: false
+  - name: CO
+    formula: CO
+    constant: false
+  - name: CH4
+    formula: CH4
+    constant: false
+  - name: HCHO
+    formula: HCHO
+    constant: false
+  - name: O2
+    formula: O2
+    constant: true
+  - name: H2O
+    formula: H2O
+    constant: true
+  - name: RO2
+    formula: RO2
+    constant: false
+  - name: HNO3
+    formula: HNO3
+    constant: false
+  - name: H2O2
+    formula: H2O2
+    constant: false
+
+reactions:
+  - id: R1
+    reactants:
+      - species: NO2
+        coefficient: 1
+    products:
+      - species: NO
+        coefficient: 1
+      - species: O3
+        coefficient: 1
+    rate:
+      type: photolysis
+      parameters: [0.0]
+    photolysis: true
+    photolysis_label: JNO2
+
+  - id: R2
+    reactants:
+      - species: NO
+        coefficient: 1
+      - species: O3
+        coefficient: 1
+    products:
+      - species: NO2
+        coefficient: 1
+    rate:
+      type: arrhenius
+      parameters: [1.8e-12, 0.0, -1370.0]
+
+  - id: R3
+    reactants:
+      - species: HO2
+        coefficient: 1
+      - species: NO
+        coefficient: 1
+    products:
+      - species: OH
+        coefficient: 1
+      - species: NO2
+        coefficient: 1
+    rate:
+      type: arrhenius
+      parameters: [3.7e-12, 0.0, -240.0]
+
+  - id: R4
+    reactants:
+      - species: OH
+        coefficient: 1
+      - species: CO
+        coefficient: 1
+    products:
+      - species: HO2
+        coefficient: 1
+    rate:
+      type: constant
+      parameters: [1.5e-13]
+
+  - id: R5
+    reactants:
+      - species: OH
+        coefficient: 1
+      - species: CH4
+        coefficient: 1
+    products:
+      - species: RO2
+        coefficient: 1
+      - species: H2O
+        coefficient: 1
+    rate:
+      type: arrhenius
+      parameters: [2.45e-12, 0.0, -1775.0]
+
+  - id: R6
+    reactants:
+      - species: RO2
+        coefficient: 1
+      - species: NO
+        coefficient: 1
+    products:
+      - species: HCHO
+        coefficient: 1
+      - species: HO2
+        coefficient: 1
+      - species: NO2
+        coefficient: 1
+    rate:
+      type: constant
+      parameters: [7.7e-12]
+
+  - id: R7
+    reactants:
+      - species: HCHO
+        coefficient: 1
+    products:
+      - species: HO2
+        coefficient: 2
+      - species: CO
+        coefficient: 1
+    rate:
+      type: photolysis
+      parameters: [0.0]
+    photolysis: true
+    photolysis_label: JHCHO
+
+  - id: R8
+    reactants:
+      - species: OH
+        coefficient: 1
+      - species: NO2
+        coefficient: 1
+    products:
+      - species: HNO3
+        coefficient: 1
+    rate:
+      type: constant
+      parameters: [1.1e-11]
+
+  - id: R9
+    reactants:
+      - species: HO2
+        coefficient: 1
+      - species: HO2
+        coefficient: 1
+    products:
+      - species: H2O2
+        coefficient: 1
+      - species: O2
+        coefficient: 1
+    rate:
+      type: constant
+      parameters: [2.2e-12]
+
+  - id: R10
+    reactants:
+      - species: O3
+        coefficient: 1
+      - species: OH
+        coefficient: 1
+    products:
+      - species: HO2
+        coefficient: 1
+      - species: O2
+        coefficient: 1
+    rate:
+      type: arrhenius
+      parameters: [1.7e-12, 0.0, -940.0]

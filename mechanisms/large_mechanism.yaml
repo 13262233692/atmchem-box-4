@@ -1,0 +1,767 @@
+name: Large_Mechanism_Test
+
+species:
+  - name: O3
+    formula: O3
+    constant: false
+  - name: NO
+    formula: NO
+    constant: false
+  - name: NO2
+    formula: NO2
+    constant: false
+  - name: NO3
+    formula: NO3
+    constant: false
+  - name: N2O5
+    formula: N2O5
+    constant: false
+  - name: HNO3
+    formula: HNO3
+    constant: false
+  - name: OH
+    formula: OH
+    constant: false
+  - name: HO2
+    formula: HO2
+    constant: false
+  - name: H2O2
+    formula: H2O2
+    constant: false
+  - name: CO
+    formula: CO
+    constant: false
+  - name: CH4
+    formula: CH4
+    constant: false
+  - name: HCHO
+    formula: HCHO
+    constant: false
+  - name: CH3O2
+    formula: CH3O2
+    constant: false
+  - name: CH3OOH
+    formula: CH3OOH
+    constant: false
+  - name: C2H6
+    formula: C2H6
+    constant: false
+  - name: C2H5O2
+    formula: C2H5O2
+    constant: false
+  - name: C2H4
+    formula: C2H4
+    constant: false
+  - name: C3H8
+    formula: C3H8
+    constant: false
+  - name: C3H7O2
+    formula: C3H7O2
+    constant: false
+  - name: C3H6
+    formula: C3H6
+    constant: false
+  - name: CH3CHO
+    formula: CH3CHO
+    constant: false
+  - name: CH3CO3
+    formula: CH3CO3
+    constant: false
+  - name: PAN
+    formula: PAN
+    constant: false
+  - name: MACR
+    formula: MACR
+    constant: false
+  - name: MVK
+    formula: MVK
+    constant: false
+  - name: ISOP
+    formula: ISOP
+    constant: false
+  - name: ISOPO2
+    formula: ISOPO2
+    constant: false
+  - name: ISOPOOH
+    formula: ISOPOOH
+    constant: false
+  - name: IEPOX
+    formula: IEPOX
+    constant: false
+  - name: GLALD
+    formula: GLALD
+    constant: false
+  - name: HACET
+    formula: HACET
+    constant: false
+  - name: MGLY
+    formula: MGLY
+    constant: false
+  - name: GLY
+    formula: GLY
+    constant: false
+  - name: GLYX
+    formula: GLYX
+    constant: false
+  - name: MEOH
+    formula: MEOH
+    constant: false
+  - name: ETOH
+    formula: ETOH
+    constant: false
+  - name: ROOH
+    formula: ROOH
+    constant: false
+  - name: RCHO
+    formula: RCHO
+    constant: false
+  - name: RO2
+    formula: RO2
+    constant: false
+  - name: RONO2
+    formula: RONO2
+    constant: false
+  - name: HONO
+    formula: HONO
+    constant: false
+  - name: SO2
+    formula: SO2
+    constant: false
+  - name: SO4
+    formula: SO4
+    constant: false
+  - name: DMS
+    formula: DMS
+    constant: false
+  - name: DMSO
+    formula: DMSO
+    constant: false
+  - name: DMSO2
+    formula: DMSO2
+    constant: false
+  - name: O1D
+    formula: O1D
+    constant: false
+  - name: O3P
+    formula: O3P
+    constant: false
+  - name: H
+    formula: H
+    constant: false
+  - name: O2
+    formula: O2
+    constant: true
+  - name: N2
+    formula: N2
+    constant: true
+  - name: H2O
+    formula: H2O
+    constant: true
+  - name: M
+    formula: M
+    constant: true
+  - name: HC3H7O2
+    formula: HC3H7O2
+    constant: false
+  - name: IC3H7O2
+    formula: IC3H7O2
+    constant: false
+  - name: NC4H10
+    formula: NC4H10
+    constant: false
+  - name: IC4H10
+    formula: IC4H10
+    constant: false
+  - name: NC4H9O2
+    formula: NC4H9O2
+    constant: false
+  - name: IC4H9O2
+    formula: IC4H9O2
+    constant: false
+  - name: TC4H9O2
+    formula: TC4H9O2
+    constant: false
+  - name: SC4H9O2
+    formula: SC4H9O2
+    constant: false
+  - name: ALK4
+    formula: ALK4
+    constant: false
+  - name: ALK5
+    formula: ALK5
+    constant: false
+  - name: ARO1
+    formula: ARO1
+    constant: false
+  - name: ARO2
+    formula: ARO2
+    constant: false
+  - name: TOL
+    formula: TOL
+    constant: false
+  - name: XYL
+    formula: XYL
+    constant: false
+  - name: CRES
+    formula: CRES
+    constant: false
+  - name: OPEN
+    formula: OPEN
+    constant: false
+  - name: TO2
+    formula: TO2
+    constant: false
+  - name: CRO
+    formula: CRO
+    constant: false
+  - name: CROHO2
+    formula: CROHO2
+    constant: false
+  - name: MEO2
+    formula: MEO2
+    constant: false
+  - name: ETO2
+    formula: ETO2
+    constant: false
+  - name: CXO3
+    formula: CXO3
+    constant: false
+  - name: MGLYO2
+    formula: MGLYO2
+    constant: false
+  - name: GLYO2
+    formula: GLYO2
+    constant: false
+  - name: BZO
+    formula: BZO
+    constant: false
+  - name: BZOO
+    formula: BZOO
+    constant: false
+  - name: BZCO3H
+    formula: BZCO3H
+    constant: false
+  - name: NAPH
+    formula: NAPH
+    constant: false
+  - name: NAPO2
+    formula: NAPO2
+    constant: false
+  - name: INO
+    formula: INO
+    constant: false
+  - name: INO2
+    formula: INO2
+    constant: false
+  - name: INO3
+    formula: INO3
+    constant: false
+  - name: IALD
+    formula: IALD
+    constant: false
+  - name: ICN
+    formula: ICN
+    constant: false
+  - name: I2O2
+    formula: I2O2
+    constant: false
+  - name: I2O3
+    formula: I2O3
+    constant: false
+  - name: I2O4
+    formula: I2O4
+    constant: false
+  - name: Br2
+    formula: Br2
+    constant: false
+  - name: Br
+    formula: Br
+    constant: false
+  - name: BrO
+    formula: BrO
+    constant: false
+  - name: HBr
+    formula: HBr
+    constant: false
+  - name: HOBr
+    formula: HOBr
+    constant: false
+  - name: BrNO2
+    formula: BrNO2
+    constant: false
+  - name: BrNO3
+    formula: BrNO3
+    constant: false
+  - name: Cl2
+    formula: Cl2
+    constant: false
+  - name: Cl
+    formula: Cl
+    constant: false
+  - name: ClO
+    formula: ClO
+    constant: false
+  - name: HCl
+    formula: HCl
+    constant: false
+  - name: HOCl
+    formula: HOCl
+    constant: false
+  - name: ClNO2
+    formula: ClNO2
+    constant: false
+  - name: ClNO3
+    formula: ClNO3
+    constant: false
+  - name: CH3Cl
+    formula: CH3Cl
+    constant: false
+  - name: CH3Br
+    formula: CH3Br
+    constant: false
+  - name: CH3I
+    formula: CH3I
+    constant: false
+  - name: CH2Cl2
+    formula: CH2Cl2
+    constant: false
+  - name: CHCl3
+    formula: CHCl3
+    constant: false
+  - name: CCl4
+    formula: CCl4
+    constant: false
+  - name: CFC11
+    formula: CFC11
+    constant: false
+  - name: CFC12
+    formula: CFC12
+    constant: false
+  - name: CFC113
+    formula: CFC113
+    constant: false
+  - name: CFC114
+    formula: CFC114
+    constant: false
+  - name: CFC115
+    formula: CFC115
+    constant: false
+  - name: HCFC22
+    formula: HCFC22
+    constant: false
+  - name: HCFC141b
+    formula: HCFC141b
+    constant: false
+  - name: HCFC142b
+    formula: HCFC142b
+    constant: false
+  - name: HFC134a
+    formula: HFC134a
+    constant: false
+  - name: HFC125
+    formula: HFC125
+    constant: false
+  - name: HFC143a
+    formula: HFC143a
+    constant: false
+  - name: HFC152a
+    formula: HFC152a
+    constant: false
+  - name: HFC227ea
+    formula: HFC227ea
+    constant: false
+  - name: HFC236fa
+    formula: HFC236fa
+    constant: false
+  - name: HFC245fa
+    formula: HFC245fa
+    constant: false
+  - name: HFC365mfc
+    formula: HFC365mfc
+    constant: false
+  - name: SF6
+    formula: SF6
+    constant: false
+  - name: CF4
+    formula: CF4
+    constant: false
+  - name: C2F6
+    formula: C2F6
+    constant: false
+  - name: NF3
+    formula: NF3
+    constant: false
+  - name: SO3
+    formula: SO3
+    constant: false
+  - name: H2SO4
+    formula: H2SO4
+    constant: false
+  - name: MSA
+    formula: MSA
+    constant: false
+  - name: NH3
+    formula: NH3
+    constant: false
+  - name: NH4
+    formula: NH4
+    constant: false
+  - name: N2O
+    formula: N2O
+    constant: false
+  - name: HNO4
+    formula: HNO4
+    constant: false
+  - name: HONO2
+    formula: HONO2
+    constant: false
+  - name: HO2NO2
+    formula: HO2NO2
+    constant: false
+  - name: NO3
+    formula: NO3
+    constant: false
+  - name: N2O4
+    formula: N2O4
+    constant: false
+  - name: H2
+    formula: H2
+    constant: false
+  - name: O
+    formula: O
+    constant: false
+  - name: S
+    formula: S
+    constant: false
+  - name: CS
+    formula: CS
+    constant: false
+  - name: CS2
+    formula: CS2
+    constant: false
+  - name: OCS
+    formula: OCS
+    constant: false
+  - name: CO2
+    formula: CO2
+    constant: false
+  - name: H2CO
+    formula: H2CO
+    constant: false
+  - name: HCOOH
+    formula: HCOOH
+    constant: false
+  - name: CH3COOH
+    formula: CH3COOH
+    constant: false
+  - name: GLHCOOH
+    formula: GLHCOOH
+    constant: false
+  - name: MGLHCOOH
+    formula: MGLHCOOH
+    constant: false
+  - name: ORG_NIT
+    formula: ORG_NIT
+    constant: false
+  - name: ORG_PER
+    formula: ORG_PER
+    constant: false
+  - name: ORG_ACID
+    formula: ORG_ACID
+    constant: false
+  - name: ORG_ALD
+    formula: ORG_ALD
+    constant: false
+  - name: ORG_KET
+    formula: ORG_KET
+    constant: false
+  - name: ORG_ALC
+    formula: ORG_ALC
+    constant: false
+  - name: ORG_ETH
+    formula: ORG_ETH
+    constant: false
+  - name: ORG_ARO
+    formula: ORG_ARO
+    constant: false
+  - name: ORG_OLF
+    formula: ORG_OLF
+    constant: false
+  - name: ORG_ALK
+    formula: ORG_ALK
+    constant: false
+  - name: SOA1
+    formula: SOA1
+    constant: false
+  - name: SOA2
+    formula: SOA2
+    constant: false
+  - name: SOA3
+    formula: SOA3
+    constant: false
+  - name: POM
+    formula: POM
+    constant: false
+  - name: EC
+    formula: EC
+    constant: false
+  - name: OC
+    formula: OC
+    constant: false
+  - name: BC
+    formula: BC
+    constant: false
+  - name: OC1
+    formula: OC1
+    constant: false
+  - name: OC2
+    formula: OC2
+    constant: false
+  - name: OC3
+    formula: OC3
+    constant: false
+  - name: OC4
+    formula: OC4
+    constant: false
+  - name: OPOC
+    formula: OPOC
+    constant: false
+  - name: OPBC
+    formula: OPBC
+    constant: false
+  - name: DUST1
+    formula: DUST1
+    constant: false
+  - name: DUST2
+    formula: DUST2
+    constant: false
+  - name: DUST3
+    formula: DUST3
+    constant: false
+  - name: DUST4
+    formula: DUST4
+    constant: false
+  - name: DUST5
+    formula: DUST5
+    constant: false
+  - name: SEASALT1
+    formula: SEASALT1
+    constant: false
+  - name: SEASALT2
+    formula: SEASALT2
+    constant: false
+  - name: SEASALT3
+    formula: SEASALT3
+    constant: false
+  - name: SEASALT4
+    formula: SEASALT4
+    constant: false
+  - name: SEASALT5
+    formula: SEASALT5
+    constant: false
+  - name: AIT1
+    formula: AIT1
+    constant: false
+  - name: AIT2
+    formula: AIT2
+    constant: false
+  - name: ACC1
+    formula: ACC1
+    constant: false
+  - name: ACC2
+    formula: ACC2
+    constant: false
+  - name: COA1
+    formula: COA1
+    constant: false
+  - name: COA2
+    formula: COA2
+    constant: false
+  - name: OIN
+    formula: OIN
+    constant: false
+  - name: OMN
+    formula: OMN
+    constant: false
+  - name: OAN
+    formula: OAN
+    constant: false
+  - name: OA1
+    formula: OA1
+    constant: false
+  - name: OA2
+    formula: OA2
+    constant: false
+  - name: OA3
+    formula: OA3
+    constant: false
+  - name: NOy
+    formula: NOy
+    constant: false
+  - name: Ox
+    formula: Ox
+    constant: false
+  - name: NOx
+    formula: NOx
+    constant: false
+  - name: VOC
+    formula: VOC
+    constant: false
+  - name: TOC
+    formula: TOC
+    constant: false
+  - name: THC
+    formula: THC
+    constant: false
+  - name: NMHC
+    formula: NMHC
+    constant: false
+
+reactions:
+  - id: R1
+    reactants:
+      - species: NO2
+        coefficient: 1
+    products:
+      - species: NO
+        coefficient: 1
+      - species: O3
+        coefficient: 1
+    rate:
+      type: photolysis
+      parameters: [0.0]
+    photolysis: true
+    photolysis_label: JNO2
+
+  - id: R2
+    reactants:
+      - species: NO
+        coefficient: 1
+      - species: O3
+        coefficient: 1
+    products:
+      - species: NO2
+        coefficient: 1
+    rate:
+      type: arrhenius
+      parameters: [1.8e-12, 0.0, -1370.0]
+
+  - id: R3
+    reactants:
+      - species: HO2
+        coefficient: 1
+      - species: NO
+        coefficient: 1
+    products:
+      - species: OH
+        coefficient: 1
+      - species: NO2
+        coefficient: 1
+    rate:
+      type: arrhenius
+      parameters: [3.7e-12, 0.0, -240.0]
+
+  - id: R4
+    reactants:
+      - species: OH
+        coefficient: 1
+      - species: CO
+        coefficient: 1
+    products:
+      - species: HO2
+        coefficient: 1
+    rate:
+      type: constant
+      parameters: [1.5e-13]
+
+  - id: R5
+    reactants:
+      - species: OH
+        coefficient: 1
+      - species: CH4
+        coefficient: 1
+    products:
+      - species: CH3O2
+        coefficient: 1
+      - species: H2O
+        coefficient: 1
+    rate:
+      type: arrhenius
+      parameters: [2.45e-12, 0.0, -1775.0]
+
+  - id: R6
+    reactants:
+      - species: CH3O2
+        coefficient: 1
+      - species: NO
+        coefficient: 1
+    products:
+      - species: HCHO
+        coefficient: 1
+      - species: HO2
+        coefficient: 1
+      - species: NO2
+        coefficient: 1
+    rate:
+      type: constant
+      parameters: [7.7e-12]
+
+  - id: R7
+    reactants:
+      - species: HCHO
+        coefficient: 1
+    products:
+      - species: HO2
+        coefficient: 2
+      - species: CO
+        coefficient: 1
+    rate:
+      type: photolysis
+      parameters: [0.0]
+    photolysis: true
+    photolysis_label: JHCHO
+
+  - id: R8
+    reactants:
+      - species: OH
+        coefficient: 1
+      - species: NO2
+        coefficient: 1
+      - species: M
+        coefficient: 1
+    products:
+      - species: HNO3
+        coefficient: 1
+    rate:
+      type: constant
+      parameters: [1.1e-11]
+
+  - id: R9
+    reactants:
+      - species: HO2
+        coefficient: 1
+      - species: HO2
+        coefficient: 1
+    products:
+      - species: H2O2
+        coefficient: 1
+      - species: O2
+        coefficient: 1
+    rate:
+      type: constant
+      parameters: [2.2e-12]
+
+  - id: R10
+    reactants:
+      - species: O3
+        coefficient: 1
+      - species: OH
+        coefficient: 1
+    products:
+      - species: HO2
+        coefficient: 1
+      - species: O2
+        coefficient: 1
+    rate:
+      type: arrhenius
+      parameters: [1.7e-12, 0.0, -940.0]
